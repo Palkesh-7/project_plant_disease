@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+          max-width: 500px;
+          margin: auto;
+          color: white;
+          }
+        .bg-img{
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.7)),url('static/bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="bg-img">
+        <div class="content">
+            <div class = image>
+                <h1>Pleace Click Image</h1>
+                <img src="{{ url_for('video') }}" height="70%">
+        
+            </div>
+
+            
+            <div class = "video-frame">
+            
+                <button 
+                    class="video-frame-btn" 
+                    type="submit"
+                    name = "click"
+                    value = "1"
+                    formaction = "{{ url_for('task') }}" 
+                    formmethod ="post"
+                    ><img src="../static/cature-button2.png" alt="click here"></button>
+
+            </div>
+
+        </div>
+        <!-- <form method="post" action="{{ url_for('task') }}">
+
+            <div>
+                <label for=""></label>
+                <input type="submit" value="Capture" name = "click">
+                
+            </div>
+        </form> -->
+    
+        <!-- <label class="control-label" for="pwd"
+                  >Capture:</label
+                >
+            <form method="post" action="{{ url_for('capture') }}">
+            <input type="submit" value="Capture" name="click"/>
+            </form>
+             -->
+        
+    
+        
+            
+        
+    </div>
+     
+</body>
+
+</html>

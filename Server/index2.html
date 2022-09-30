@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Classification</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body background="static/bg.jpg">
+    <!-- <nav>
+      <ul>
+          <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+          <li>Home</li>
+          <li>About</li>
+      </ul>
+  </nav> -->
+    
+    <div>
+      <!-- <img src="{{ url_for('video') }}" width="30%"/> -->
+      <div class="container">
+        <h2 class="jumbotron bg-primary">Plant disease Classfication</h2>
+        <br /><br />
+        
+        <form
+          class="form-horizontal"
+          action="/submit"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label class="control-label" for="pwd"
+              >Upload Your Image :</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="file"
+                class="form-control"
+                placeholder="Hours Studied"
+                name="my_image"
+                id="pwd"
+              />
+            </div>
+            <div class="submit-btn">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          
+        </form>
+
+        <h3 class ="control-label-or">or</h3>
+
+        <form action="/">
+          <label class="control-label" for="pwd"
+              >Take Picture :</label>
+          <button type="submit" class = "btn _capture"><img src="../static/icon1.jpg" alt="capture image"><a href="capture.html"></a></button>
+        </form>
+
+       
+      </div>
+    </div>
+  </body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .bg_img {
+      background-image: url("../bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .control-label{
+      color: white;
+    }
+    .btn_capture img{
+      height: 20px;
+      width: 30px;
+    }
+    .control-label-or{
+      color: white;
+  
+
+    }
+  </style>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
+
+    <style>
+        .content {
+          max-width: 500px;
+          margin: auto;
+          color: white;
+          }
+        .bg-img{
+            width: 130%;
+            height: 130vh;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.7)),url('static/bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+        li {
+            float: left;
+            }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        li a:hover {
+            background-color: #111;
+            }
+        
+        .title{
+            font-family: "Sofia", sans-serif;
+
+            }
+        
+    </style>
+</head>
+<body>
+    <div class = "bg-img">
+        <header>
+            <nav>
+                <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class = "content">
+            <h2 class="title">Heal Your Crop</h2>
+            <br /><br />
+            <div class="form">
+                
+                <form
+                class="form-horizontal"
+                action="/submit"
+                method="post"
+                enctype="multipart/form-data">
+
+
+                <div class="form-txt">
+                    <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com//200x100?agriculture,tomato">
+                    
+                </div>
+                    
+                    <label class="control-label" for="pwd">Upload Tomato Image :</label>
+
+                <div class="file-bar">
+                    <input type="file" class="form-control" placeholder="Hours Studied" name="my_image" id="pwd"/>
+                </div> 
+                <div class="submit-btn">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+                </form>
+                <br/><br/>
+
+                <div class="form-txt">
+                    <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com//200x100?agriculture,potato">
+                    
+                </div>
+                <label class="control-label" for="pwd">Upload Potato Image :</label>
+
+                <div class="file-bar">
+                    <input type="file" class="form-control" placeholder="Hours Studied" name="my_image" id="pwd"/>
+                </div> 
+                <div class="submit-btn">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+                </form>
+                <br/><br/>
+                <div class="form-txt">
+                    <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com//200x100?agriculture,pepperbell">
+                    
+                </div>
+                <label class="control-label" for="pwd">Upload Pepper-Bell Image :</label>
+
+                <div class="file-bar">
+                    <input type="file" class="form-control" placeholder="Hours Studied" name="my_image" id="pwd"/>
+                </div> 
+                <div class="submit-btn">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+                </form>
+                <br/><br/>
+
+                <div>
+                    
+
+                
+                
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
